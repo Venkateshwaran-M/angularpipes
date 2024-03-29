@@ -1,0 +1,24 @@
+<p>The hero's birthday is {{birthday}}</p>
+<p>The hero's birthday is {{birthday | date}}</p>
+<p>The hero's birthday is {{birthday | date:'short'}}</p>
+<p>The hero's birthday is {{birthday | date:'medium'}}</p>
+<p>The hero's birthday is {{birthday | date:'long'}}</p>
+
+<p>The hero's birthday is {{ birthday | date:"shortDate" }} in the "shortDate" format.</p>
+
+<h1>Example: Formatting a date</h1>
+<p>The hero's birthday is {{ birthday | date:format }} in "{{format}}" format.
+  Click the toggle button to change formats.</p>
+
+<button type="button" (click)="toggleFormat()">Toggle Format</button>
+
+<h1>Example: Chaining two pipes together</h1>
+<p>
+  The chained hero's uppercase birthday is
+  {{ birthday | date | uppercase}}
+</p>
+
+<p>
+  The chained hero's uppercase birthday in "fullDate" format is
+  {{ birthday | date:'fullDate' | uppercase}}
+</p>
