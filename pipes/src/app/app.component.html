@@ -22,3 +22,16 @@
   The chained hero's uppercase birthday in "fullDate" format is
   {{ birthday | date:'fullDate' | uppercase}}
 </p>
+
+<form style="top: 5px; width: 720px; padding: 10px;" id="payment-form" class="cs-custom-scroll">
+  <div id="payment-element">
+ <!-- Elements will create form elements here -->
+</div>
+<div id="address-element"></div>
+
+<button id="submit" class="button"(click)="handleSubmitForStripePayment()">Submit</button>
+<div id="error-message" style="color: red;">
+   
+ <!-- Display error message to your customers here -->
+</div>
+</form>
